@@ -17,7 +17,8 @@
 		{
 			"file_exclude_patterns":
 			[
-				"*.sublime-*"
+				"*.sublime-*",
+        "package-lock.json"
 			],
 			"folder_exclude_patterns":
 			[
