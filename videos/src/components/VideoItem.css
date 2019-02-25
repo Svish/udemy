@@ -1,0 +1,4 @@
+.video-item {
+  display: grid !important;
+  grid-template-columns: max-content 1fr;
+}
