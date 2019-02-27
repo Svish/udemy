@@ -1,3 +1,5 @@
-# Modern React with Redux
+# Udemy stuff
 
-From [Udemy](https://www.udemy.com) [Modern React with Redux](https://www.udemy.com/react-redux/)
+My code from going through [Udemy](https://www.udemy.com) courses.
+
+- [Modern React with Redux](modern-react-with-redux)
