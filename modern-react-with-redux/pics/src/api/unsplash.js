@@ -1,7 +1,8 @@
 import axios from 'axios';
 
-const ACCESS_KEY =
-  '5f02fd3ac62ebd7f5e3df2dd24bb7b71fdc50198ad6f86da3f303b21e57d51a2';
+const ACCESS_KEY = process.env.REACT_APP_UNSPLASH_API_KEY;
+
+if (!ACCESS_KEY) throw new Error('Missing Unsplash access key in .env');
 
 export default axios.create({
   baseURL: 'https://api.unsplash.com',
