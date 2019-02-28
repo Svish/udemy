@@ -33,7 +33,7 @@ class GoogleAuth extends React.Component {
   renderButton() {
     switch (this.props.isSignedIn) {
       case null:
-        return <i className="notched circle loading icon" />;
+        return <i className="spinner loading icon" />;
 
       case true:
         return (

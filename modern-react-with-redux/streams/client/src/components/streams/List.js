@@ -26,13 +26,13 @@ class StreamList extends React.Component {
       return (
         <div className="right floated content">
           <Link to={`/streams/${stream.id}/edit`} className="ui button primary">
-            <i className="edit icon" />
+            Edit
           </Link>
           <Link
             to={`/streams/${stream.id}/delete`}
             className="ui button negative"
           >
-            <i className="trash icon" />
+            Delete
           </Link>
         </div>
       );
@@ -44,7 +44,7 @@ class StreamList extends React.Component {
       return (
         <div style={{ textAlign: 'right' }}>
           <Link to="/streams/new" className="ui button primary">
-            <i className="add icon" />
+            New stream
           </Link>
         </div>
       );
