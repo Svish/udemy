@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { signIn, signOut } from '../actions/auth';
 
+import Spinner from './Spinner';
+
 class GoogleAuth extends React.Component {
   componentDidMount() {
     window.gapi.load('client:auth2', () => {
@@ -33,7 +35,7 @@ class GoogleAuth extends React.Component {
   renderButton() {
     switch (this.props.isSignedIn) {
       case null:
-        return <i className="spinner loading icon" />;
+        return <Spinner />;
 
       case true:
         return (

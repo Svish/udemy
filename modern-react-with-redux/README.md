@@ -50,5 +50,6 @@ _**Note:** Requires valid [API Key](https://console.developers.google.com/apis/d
 - **Section 19:** Handling Forms with Redux Form
 - **Section 20:** REST-Based React Apps
 - **Section 21:** Using React Portals
+- **Section 22:** Implementing Streaming Video
 
 _**Note:** Requires valid [OAuth Client ID](https://console.developers.google.com/apis/dashboard) for [Google API](https://console.developers.google.com/apis/library/youtube.googleapis.com) in `src/api/youtube.js`._

@@ -1,9 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { pick } from 'lodash';
+
 import { fetchStream, editStream } from '../../actions/streams';
 
 import StreamForm from './Form';
+import Spinner from '../Spinner';
 
 class StreamEdit extends React.Component {
   componentDidMount() {
@@ -16,14 +18,16 @@ class StreamEdit extends React.Component {
 
   render() {
     if (!this.props.stream) {
-      return <i className="spinner loading icon" />;
+      return <Spinner />;
     }
+
+    const { stream } = this.props;
 
     return (
       <div>
         <h3 className="ui header">Edit stream</h3>
         <StreamForm
-          initialValues={pick(this.props.stream, 'title', 'description')}
+          initialValues={pick(stream, 'title', 'description')}
           onSubmit={this.onSubmit}
         />
       </div>

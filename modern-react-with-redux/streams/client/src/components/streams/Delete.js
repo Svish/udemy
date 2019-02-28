@@ -5,6 +5,7 @@ import history from '../../history';
 import { fetchStream, deleteStream } from '../../actions/streams';
 
 import Modal from '../Modal';
+import Spinner from '../Spinner';
 
 class StreamDelete extends React.Component {
   componentDidMount() {
@@ -17,7 +18,7 @@ class StreamDelete extends React.Component {
 
   renderContent() {
     if (!this.props.stream) {
-      return <i className="spinner loading icon" />;
+      return <Spinner />;
     }
 
     return (

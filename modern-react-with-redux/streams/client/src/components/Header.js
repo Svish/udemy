@@ -6,7 +6,7 @@ import GoogleAuth from './GoogleAuth';
 export default () => (
   <header className="ui secondary pointing menu">
     <Link to="/" className="item">
-      Streams
+      Streamy
     </Link>
 
     <nav className="right menu">

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
+import history from '../../history';
+
 class Form extends React.Component {
   renderInput = ({ input, label, meta }) => {
     const className = `field ${meta.error && meta.touched ? 'error' : ''}`;
@@ -29,6 +31,8 @@ class Form extends React.Component {
     this.props.onSubmit(formValues);
   };
 
+  onDismiss = () => history.goBack();
+
   render() {
     return (
       <form
@@ -42,7 +46,12 @@ class Form extends React.Component {
           name="description"
           label="Description"
         />
-        <button className="ui button primary">Submit</button>
+        <div className="actions">
+          <button onClick={this.onDismiss} className="ui button">
+            Cancel
+          </button>
+          <button className="ui button primary">Submit</button>
+        </div>
       </form>
     );
   }
