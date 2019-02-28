@@ -1,0 +1,39 @@
+{
+  "streams": [
+    {
+      "title": "Name",
+      "description": "Desc",
+      "id": 1
+    },
+    {
+      "title": "Users!",
+      "description": "With user id and stuff",
+      "userId": "112198935525467623240",
+      "id": 2
+    },
+    {
+      "title": "Navigate this?",
+      "description": "Console logging navigate",
+      "userId": "112198935525467623240",
+      "id": 3
+    },
+    {
+      "title": "Navigate this!",
+      "description": "Navigating",
+      "userId": "112198935525467623240",
+      "id": 4
+    },
+    {
+      "title": "Redirect to stream?",
+      "description": "Redirect to stream instead of list?",
+      "userId": "112198935525467623240",
+      "id": 5
+    },
+    {
+      "title": "Component reuse!",
+      "description": "Reusing form in StreamCreate",
+      "userId": "112198935525467623240",
+      "id": 6
+    }
+  ]
+}

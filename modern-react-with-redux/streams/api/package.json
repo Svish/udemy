@@ -1,0 +1,11 @@
+{
+  "name": "api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "json-server -p 3001 -w db.json"
+  },
+  "dependencies": {
+    "json-server": "^0.14.2"
+  }
+}

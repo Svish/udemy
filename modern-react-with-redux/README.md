@@ -48,5 +48,6 @@ _**Note:** Requires valid [API Key](https://console.developers.google.com/apis/d
 - **Section 17:** Handling Authentication with React
 - **Section 18:** [Redux Dev Tools](https://github.com/zalmoxisus/redux-devtools-extension/#installation)
 - **Section 19:** Handling Forms with Redux Form
+- **Section 20:** REST-Based React Apps
 
 _**Note:** Requires valid [OAuth Client ID](https://console.developers.google.com/apis/dashboard) for [Google API](https://console.developers.google.com/apis/library/youtube.googleapis.com) in `src/api/youtube.js`._

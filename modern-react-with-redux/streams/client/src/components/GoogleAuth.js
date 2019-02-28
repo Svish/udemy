@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { signIn, signOut } from '../actions';
+import { signIn, signOut } from '../actions/auth';
 
 class GoogleAuth extends React.Component {
   componentDidMount() {
@@ -33,7 +33,7 @@ class GoogleAuth extends React.Component {
   renderButton() {
     switch (this.props.isSignedIn) {
       case null:
-        return null;
+        return <i className="notched circle loading icon" />;
 
       case true:
         return (
