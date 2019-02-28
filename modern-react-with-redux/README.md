@@ -42,4 +42,7 @@ _**Note:** Requires valid [API Key](https://console.developers.google.com/apis/d
 - **Section 14:** Async Actions with Redux Thunk
 - **Section 15:** Redux Store Design
 
-_**Note:** Uses [JSON Placeholder](http://jsonplaceholder.typicode.com/)._
+## [streams](streams)
+
+- **Section 16:** Navigation with React Router
+- **Section 17:** Handling Authentication with React
