@@ -32,7 +32,14 @@ _**Note:** Requires valid [Access Key](https://unsplash.com/oauth/applications) 
 
 _**Note:** Requires valid [API Key](https://console.developers.google.com/apis/dashboard) for the [YouTube Data API v3](https://console.developers.google.com/apis/library/youtube.googleapis.com) in `src/api/youtube.js`._
 
-# [songs](songs)
+## [songs](songs)
 
 - **Section 12:** On We Go...To Redux!
 - **Section 13:** Integrating React with Redux
+
+## [blog](blog)
+
+- **Section 14:** Async Actions with Redux Thunk
+- **Section 15:** Redux Store Design
+
+_**Note:** Uses [JSON Placeholder](http://jsonplaceholder.typicode.com/)._
