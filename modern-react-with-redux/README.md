@@ -53,3 +53,8 @@ _**Note:** Requires valid [API Key](https://console.developers.google.com/apis/d
 - **Section 22:** Implementing Streaming Video
 
 _**Note:** Requires valid [OAuth Client ID](https://console.developers.google.com/apis/dashboard) for [Google API](https://console.developers.google.com/apis/library/youtube.googleapis.com) in `src/api/youtube.js`._
+
+## [translate](translate)
+
+- **Section 23:** The Context System with React
+- **Section 24:** Replacing Redux with Context
