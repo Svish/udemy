@@ -1,0 +1,10 @@
+{
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "create": "create-react-app"
+  },
+  "dependencies": {
+    "create-react-app": "*"
+  }
+}

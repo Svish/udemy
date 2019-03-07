@@ -1,11 +1,7 @@
 {
   "license": "UNLICENSED",
   "private": true,
-  "scripts": {
-    "create": "create-react-app"
-  },
   "dependencies": {
-    "create-react-app": "*",
     "prettier": "^1.16.4"
   }
 }
