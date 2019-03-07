@@ -58,3 +58,7 @@ _**Note:** Requires valid [OAuth Client ID](https://console.developers.google.co
 
 - **Section 23:** The Context System with React
 - **Section 24:** Replacing Redux with Context
+
+## [hooks-simple](hooks-simple)
+
+- **Section 25:** Hooks with Functional Components
