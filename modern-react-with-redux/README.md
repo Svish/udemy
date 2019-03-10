@@ -62,3 +62,7 @@ _**Note:** Requires valid [OAuth Client ID](https://console.developers.google.co
 ## [hooks-simple](hooks-simple)
 
 - **Section 25:** Hooks with Functional Components
+
+## [hooks-seasons](hooks-seasons)
+
+- **Section 26:** More Fun with Hooks
