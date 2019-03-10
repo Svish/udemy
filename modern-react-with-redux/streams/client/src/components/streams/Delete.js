@@ -22,24 +22,24 @@ class StreamDelete extends React.Component {
     }
 
     return (
-      <React.Fragment>
+      <>
         Are you sure you want to delete the stream
         <b>"{this.props.stream.title}"</b>?
-      </React.Fragment>
+      </>
     );
   }
 
   // NOTE: Could use <> </>, but currently breaks highlighting... :(
   renderActions() {
     return (
-      <React.Fragment>
+      <>
         <button onClick={this.onCancelClick} className="ui button">
           Cancel
         </button>
         <button onClick={this.onDeleteClick} className="ui button negative">
           Delete
         </button>
-      </React.Fragment>
+      </>
     );
   }
 
