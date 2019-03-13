@@ -1,0 +1,17 @@
+{
+  "name": "udemy-node-with-react",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "index.js",
+  "engines": {
+    "node": "11.10.0",
+    "npm": "6.7.0"
+  },
+  "scripts": {
+    "deploy": "cd ../.. && git subtree push --prefix node-with-react/server heroku/node-with-react master",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
