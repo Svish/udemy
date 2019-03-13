@@ -1,33 +1,36 @@
 {
-	"settings": {
-		"detect_indentation": false,
-		"tab_size": 2,
-		"translate_tabs_to_spaces": true,
-    "js_prettier": {
-      "auto_format_on_save": true,
-      "auto_format_on_save_requires_prettier_config": false,
-      "prettier_options": {
-        "singleQuote": true,
-        "endOfLine": "lf",
-        "trailingComma": "all",
-      },
-    },
-	},
 	"folders":
 	[
 		{
 			"file_exclude_patterns":
 			[
 				"*.sublime-*",
-        "package-lock.json"
+				"package-lock.json"
 			],
 			"folder_exclude_patterns":
 			[
 				".git",
-        "build",
+				"build",
 				"node_modules"
 			],
 			"path": "."
+		}
+	],
+	"settings":
+	{
+		"detect_indentation": false,
+		"js_prettier":
+		{
+			"auto_format_on_save": true,
+			"auto_format_on_save_requires_prettier_config": false,
+			"prettier_options":
+			{
+				"endOfLine": "lf",
+				"singleQuote": true,
+				"trailingComma": "all"
+			}
 		},
-	]
+		"tab_size": 2,
+		"translate_tabs_to_spaces": true
+	}
 }
