@@ -9,6 +9,7 @@
   },
   "scripts": {
     "deploy": "cd ../.. && git subtree push --prefix node-with-react/server heroku/node-with-react master",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "client": "npm run start --prefix client",
     "server": "nodemon --require dotenv/config index.js",
