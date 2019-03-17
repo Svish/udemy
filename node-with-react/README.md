@@ -8,6 +8,7 @@ Code from going through the [Node with React: Fullstack Web Development](https:/
 - **Section 4:** Adding MongoDB
 - **Section 5:** Dev vs Prod Environments
 - **Section 6:** Moving to the Client Side
+- **Section 7:** Developing the Client Side
 
 ## Dependencies
 
