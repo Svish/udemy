@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
+import StripeCheckout from './StripeCheckout';
+
 class Header extends React.Component {
   renderNavItems() {
     switch (this.props.auth) {
@@ -17,9 +19,17 @@ class Header extends React.Component {
 
       default:
         return (
-          <li>
-            <a href="/api/logout">Logout</a>
-          </li>
+          <>
+            <li>
+              <StripeCheckout />
+            </li>
+            <li style={{ margin: '0 1em' }}>
+              Credits: {this.props.auth.credits}
+            </li>
+            <li>
+              <a href="/api/logout">Logout</a>
+            </li>
+          </>
         );
     }
   }

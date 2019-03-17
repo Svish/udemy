@@ -6,3 +6,9 @@ export const fetchAuthUser = () => async dispatch => {
 
   dispatch({ type: FETCH_AUTH_USER, payload: data });
 };
+
+export const newPayment = token => async dispatch => {
+  const { data } = await axios.post('/api/payments', token);
+
+  dispatch({ type: FETCH_AUTH_USER, payload: data });
+};
