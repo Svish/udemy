@@ -9,10 +9,13 @@
   },
   "scripts": {
     "deploy": "cd ../.. && git subtree push --prefix node-with-react/server heroku/node-with-react master",
-    "watch": "nodemon --require dotenv/config index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm run start --prefix client",
+    "server": "nodemon --require dotenv/config index.js",
     "start": "node --require dotenv/config index.js"
   },
   "dependencies": {
+    "concurrently": "^4.1.0",
     "cookie-session": "^1.3.3",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",

@@ -1,23 +1,3 @@
-## Configuration (`.env`)
-
-```
-PORT=
-COOKIE_ENCRYPTION_KEY=
-```
-
-**[Google OAuth](https://console.developers.google.com/apis/credentials)**
-
-```
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-```
-
-**[MongoDB](https://cloud.mongodb.com)**
-
-```
-MONGO_DB_URI=
-```
-
 ## Deployment to [Heroku](https://devcenter.heroku.com/articles/heroku-cli)
 
 ```console
