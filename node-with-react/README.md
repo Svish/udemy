@@ -21,3 +21,22 @@ Code from going through the [Node with React: Fullstack Web Development](https:/
 - [MongoDB Atlas](https://cloud.mongodb.com)
 - [Heroku](https://dashboard.heroku.com)
 - [Stripe](https://dashboard.stripe.com)
+
+## Development
+
+```console
+npm install && npm run dev
+```
+
+## Deployment to [Heroku](https://devcenter.heroku.com/articles/heroku-cli)
+
+```console
+# Setup
+heroku login
+heroku create
+git remote add heroku/node-with-react https://git.heroku.com/{heroku-app-id}.git
+
+# Deploy
+cd node-with-react/server
+npm run deploy
+```
