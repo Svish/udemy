@@ -8,10 +8,6 @@ const Mailer = require('../services/Mailer');
 const template = require('../services/emailTemplates/survey');
 
 module.exports = app => {
-  app.get('/api/surveys/thank-you', (req, res) => {
-    res.send('Thank you for responding!');
-  });
-
   app.post('/api/surveys', authenticated, hasCredits(1), async (req, res) => {
     const { title, subject, body, recipients } = req.body;
 
@@ -21,19 +17,23 @@ module.exports = app => {
       title,
       subject,
       body,
-      recipients: recipients.split(',').map(email => ({ email })),
+      recipients: recipients
+        .split(',')
+        .map(email => email.trim())
+        .filter(email => !!email)
+        .map(email => ({ email })),
     });
 
     const mailer = new Mailer(survey, template(survey));
 
     try {
       const response = await mailer.send();
-
       await survey.save();
 
       req.user.credits -= 1;
       const user = await req.user.save();
 
+      console.log('Survey sent:', response.statusCode);
       return res.send(user);
     } catch (e) {
       console.error(e);

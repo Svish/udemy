@@ -12,3 +12,11 @@ export const newPayment = token => async dispatch => {
 
   dispatch({ type: FETCH_AUTH_USER, payload: data });
 };
+
+export const newSurvey = (survey, history) => async dispatch => {
+  const { data } = await axios.post('/api/surveys', survey);
+
+  dispatch({ type: FETCH_AUTH_USER, payload: data });
+
+  history.push('/surveys');
+};

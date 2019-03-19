@@ -1,3 +1,5 @@
+const DOMAIN = process.env.SEND_GRID_REDIRECT_DOMAIN;
+
 module.exports = survey => {
   return `<html>
   <body>
@@ -6,8 +8,8 @@ module.exports = survey => {
       <p>Please answer the following question:</p>
       <p>${survey.body}</p>
       <div>
-        <a href="${SEND_GRID_REDIRECT_DOMAIN}/thank-you">Yes</a>
-        <a href="${SEND_GRID_REDIRECT_DOMAIN}/thank-you">No</a>
+        <a href="${DOMAIN}/thank-you">Yes</a>
+        <a href="${DOMAIN}/thank-you">No</a>
       </div>
     </div>
   </body>
