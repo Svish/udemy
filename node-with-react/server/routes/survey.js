@@ -71,6 +71,15 @@ module.exports = app => {
   });
 
   app.get('/api/surveys', authenticated, async (req, res) => {
-    // TODO
+    const surveys = await Survey.find({
+      _user: req.user.id,
+    })
+      .select({
+        recipients: false,
+      })
+      .sort({
+        date: 'desc',
+      });
+    res.send(surveys);
   });
 };

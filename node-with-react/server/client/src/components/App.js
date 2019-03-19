@@ -8,9 +8,9 @@ import { fetchAuthUser } from '../actions';
 
 import Header from './Header';
 import Landing from './Landing';
-import SurveyList from './surveys/List';
+import Dashboard from './Dashboard';
 import SurveyNew from './surveys/New';
-import ThankYou from './ThankYou';
+import ThankYou from './surveys/ThankYou';
 
 class App extends React.Component {
   componentDidMount() {
@@ -22,7 +22,7 @@ class App extends React.Component {
         <Header />
         <div className="container">
           <Route exact path="/" component={Landing} />
-          <Route exact path="/surveys" component={SurveyList} />
+          <Route exact path="/surveys" component={Dashboard} />
           <Route exact path="/surveys/new" component={SurveyNew} />
           <Route exact path="/surveys/:id/:choice" component={ThankYou} />
         </div>
