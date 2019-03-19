@@ -24,7 +24,7 @@ class App extends React.Component {
           <Route exact path="/" component={Landing} />
           <Route exact path="/surveys" component={SurveyList} />
           <Route exact path="/surveys/new" component={SurveyNew} />
-          <Route exact path="/thank-you" component={ThankYou} />
+          <Route exact path="/surveys/:id/:choice" component={ThankYou} />
         </div>
       </BrowserRouter>
     );

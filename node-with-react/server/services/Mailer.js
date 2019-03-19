@@ -1,16 +1,13 @@
-const sendgrid = require('sendgrid');
-const helper = sendgrid.mail;
+const { sendgrid, helper } = require('./sendgrid');
 
 class Mailer extends helper.Mail {
   constructor({ subject, recipients }, content) {
     super();
 
-    this.sgApi = sendgrid(process.env.SEND_GRID_API_KEY);
     this.from_email = new helper.Email('noreply@geekality.net');
     this.subject = subject;
     this.body = new helper.Content('text/html', content);
     this.recipients = this.formatAddresses(recipients);
-
     this.addContent(this.body);
     this.addClickTracking();
     this.addRecipients();
@@ -38,13 +35,13 @@ class Mailer extends helper.Mail {
   }
 
   async send() {
-    const request = this.sgApi.emptyRequest({
+    const request = sendgrid.emptyRequest({
       method: 'POST',
       path: '/v3/mail/send',
       body: this.toJSON(),
     });
 
-    return await this.sgApi.API(request);
+    return await sendgrid.API(request);
   }
 }
 
