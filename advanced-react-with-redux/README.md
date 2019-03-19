@@ -4,4 +4,4 @@ Code from going through the [Advanced React and Redux: 2018 Edition](https://www
 
 - **Section 1:** Course Overview
 - **Section 2:** Testing
-  - Lecture 1 to 23: [testing](testing)
+  - Lecture 1 to 25: [testing](testing)
