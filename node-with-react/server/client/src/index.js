@@ -8,6 +8,10 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import App from './components/App';
 import reducers from './reducers';
 
+if (process.env.NODE_ENV === 'development') {
+  import('axios').then(m => (window.axios = m));
+}
+
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
   reducers,

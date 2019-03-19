@@ -11,6 +11,7 @@ Code from going through the [Node with React: Fullstack Web Development](https:/
 - **Section 7:** Developing the Client Side
 - **Section 8:** Handling Payments
 - **Section 9:** Back End to Front End Routing in Production
+- **Section 10:** Mongoose for Survey Creation
 
 ## Dependencies
 
