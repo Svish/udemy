@@ -19,9 +19,9 @@ describe('<CommentBox />', () => {
     component.unmount();
   });
 
-  it('has a textarea and a button', () => {
+  it('has a textarea and a submit button', () => {
     expect(component.find('textarea').length).toEqual(1);
-    expect(component.find('button').length).toEqual(1);
+    expect(component.find('button[type="submit"]').length).toEqual(1);
   });
 
   describe('the textarea', () => {
