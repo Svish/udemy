@@ -5,7 +5,7 @@ import { devToolsEnhancer } from 'redux-devtools-extension';
 
 import reducers from 'reducers';
 
-export default props => {
-  const store = createStore(reducers, {}, devToolsEnhancer());
-  return <Provider store={store}>{props.children}</Provider>;
+export default ({ children, initialState = {} }) => {
+  const store = createStore(reducers, initialState, devToolsEnhancer());
+  return <Provider store={store}>{children}</Provider>;
 };
