@@ -9,3 +9,7 @@ Code from going through the [React Testing with Jest and Enzyme](react-testing-w
 ## [click-counter](click-counter)
 
 - **Section 2:** Simple React App: Click Counter
+
+## [jotto](jotto)
+
+- **Section 3:** Jotto Intro and Congrats Component
