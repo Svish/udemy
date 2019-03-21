@@ -13,3 +13,4 @@ Code from going through the [React Testing with Jest and Enzyme](react-testing-w
 ## [jotto](jotto)
 
 - **Section 3:** Jotto Intro and Congrats Component
+- **Section 4:** GuessedWords Component
