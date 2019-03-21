@@ -5,3 +5,7 @@ Code from going through the [React Testing with Jest and Enzyme](react-testing-w
 ## [demo](demo)
 
 - **Section 1:** Introduction to Jest, Enzyme and TDD
+
+## [click-counter](click-counter)
+
+- **Section 2:** Simple React App: Click Counter
