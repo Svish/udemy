@@ -14,3 +14,4 @@ Code from going through the [React Testing with Jest and Enzyme](react-testing-w
 
 - **Section 3:** Jotto Intro and Congrats Component
 - **Section 4:** GuessedWords Component
+- **Section 5:** Simple Redux: success Piece of State
