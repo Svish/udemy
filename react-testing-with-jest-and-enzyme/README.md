@@ -17,3 +17,7 @@ Code from going through the [React Testing with Jest and Enzyme](react-testing-w
 - **Section 5:** Simple Redux: success Piece of State
 - **Section 6:** Testing Redux Thunk
 - **Section 7:** Testing Axios
+- _(skipped) **Section 8:** Redux Components_
+- **Section 9:** Resources
+
+_**Note:** Had to do several adjustments because of changes in react-redux 6; ended up fully skipping section 8..._ 🙄
