@@ -1,5 +1,10 @@
-import { GUESS_WORD } from '../actions/types';
+import { SET_SECRET_WORD } from '../actions/types';
 
 export default (state = null, action) => {
-  return state;
+  switch (action.type) {
+    case SET_SECRET_WORD:
+      return action.payload;
+    default:
+      return state;
+  }
 };
