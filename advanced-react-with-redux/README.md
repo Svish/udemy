@@ -10,3 +10,7 @@ Code from going through the [Advanced React and Redux: 2018 Edition](https://www
 ## [hoc](hoc)
 
 - **Section 3:** Higher Order Components
+
+## [middlewares](middlewares)
+
+- **Section 4:** Middlewares with Redux
