@@ -2,6 +2,11 @@
 
 Code from going through the [Advanced React and Redux: 2018 Edition](https://www.udemy.com/react-redux-tutorial/) course at [Udemy](https://www.udemy.com).
 
+## [testing](testing)
+
 - **Section 1:** Course Overview
 - **Section 2:** Testing
-  - Lecture 1 to 63: [testing](testing)
+
+## [hoc](hoc)
+
+- **Section 3:** Higher Order Components
