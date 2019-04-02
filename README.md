@@ -8,3 +8,7 @@ Code and stuff from going through [Udemy](https://www.udemy.com) courses.
 - [Node with React](node-with-react)
 - [React Testing with Jest and Enzyme](react-testing-with-jest-and-enzyme)
 - [Advanced React and Redux](advanced-react-with-redux)
+
+## Notes to self
+
+- `npx create-react-app project-name`
