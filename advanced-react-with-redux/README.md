@@ -14,3 +14,8 @@ Code from going through the [Advanced React and Redux: 2018 Edition](https://www
 ## [middlewares](middlewares)
 
 - **Section 4:** Middlewares with Redux
+
+## [authentication](authentication)
+
+- **Section 5:** Server Setup - Authentication
+- **Section 6:** Client Side Auth
