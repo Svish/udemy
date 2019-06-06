@@ -3,6 +3,7 @@ const http = require('http');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 // DB Setup
 mongoose
@@ -14,6 +15,7 @@ mongoose
 
 // App Setup
 const app = express()
+  .use(cors())
   .use(morgan('combined'))
   .use(bodyParser.json({ type: '*/*' }));
 
