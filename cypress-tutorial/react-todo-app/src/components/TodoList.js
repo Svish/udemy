@@ -6,7 +6,7 @@ const TodoItem = props => (
       <input
         className="toggle"
         type="checkbox"
-        readOnly
+        onChange={() => props.handleToggle(props.id)}
         checked={props.isComplete}
       />
       <label>{props.name}</label>
@@ -21,7 +21,12 @@ const TodoItem = props => (
 export default props => (
   <ul className="todo-list">
     {props.todos.map(todo => (
-      <TodoItem key={todo.id} {...todo} handleDestroy={props.handleDestroy} />
+      <TodoItem
+        key={todo.id}
+        {...todo}
+        handleDestroy={props.handleDestroy}
+        handleToggle={props.handleToggle}
+      />
     ))}
   </ul>
 );
