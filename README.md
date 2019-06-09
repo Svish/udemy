@@ -1,6 +1,6 @@
 # Udemy stuff
 
-Code and stuff from going through [Udemy](https://www.udemy.com) courses.
+Code and stuff from going through [Udemy](https://www.udemy.com) courses and other tutorials.
 
 ## Courses
 
@@ -9,6 +9,7 @@ Code and stuff from going through [Udemy](https://www.udemy.com) courses.
 - [React Testing with Jest and Enzyme](react-testing-with-jest-and-enzyme)
 - [Advanced React and Redux](advanced-react-with-redux)
 - [Redux Saga (with React and Redux)](redux-saga-fast-track)
+- [Automated Software Testing with Cypress](automated-software-testing-with-cypress)
 
 ## Notes to self
 
