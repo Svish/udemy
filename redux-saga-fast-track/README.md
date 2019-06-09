@@ -11,7 +11,3 @@ Code from going through the [Redux Saga (with React and Redux): Fast-track intro
 - **Section 5:** Creating and deleting users sagas
 - **Section 6:** Error handling in sagas
 - **Section 7:** Resources
-
-npm install redux react-redux redux-saga reactstrap axios
-
-mkdir src\components src\actions src\reducers src\sagas
