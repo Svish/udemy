@@ -2,7 +2,7 @@
 
 Code and stuff from going through [Udemy](https://www.udemy.com) courses and other tutorials.
 
-## Courses
+## Udemy Courses
 
 - [Modern React with Redux](modern-react-with-redux)
 - [Node with React](node-with-react)
@@ -10,6 +10,10 @@ Code and stuff from going through [Udemy](https://www.udemy.com) courses and oth
 - [Advanced React and Redux](advanced-react-with-redux)
 - [Redux Saga (with React and Redux)](redux-saga-fast-track)
 - [Automated Software Testing with Cypress](automated-software-testing-with-cypress)
+
+## Other tutorials
+
+- [Cypress Tutorial Videos](cypress-tutorial)
 
 ## Notes to self
 
