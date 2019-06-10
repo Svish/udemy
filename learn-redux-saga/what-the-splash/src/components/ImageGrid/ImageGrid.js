@@ -1,41 +1,69 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
+
+import { loadImages } from '../../actions';
+import Button from '../Button';
+import Stats from '../Stats';
 
 import './styles.css';
 
-const key = process.env.REACT_APP_UNSPLASH_API_KEY;
-
-class ImageGrid extends Component {
-  state = {
-    images: [],
-  };
-
+class ImageGrid extends React.Component {
   componentDidMount() {
-    fetch(`https://api.unsplash.com/photos/?client_id=${key}&per_page=28`)
-      .then(res => res.json())
-      .then(images => {
-        this.setState({
-          images,
-        });
-      });
+    this.props.loadImages();
+  }
+
+  renderGrid() {
+    return (
+      <section className="grid">
+        {this.props.images.map(image => (
+          <div
+            key={image.id}
+            className={`item item-${Math.ceil(image.height / image.width)}`}
+          >
+            <Stats stats={this.props.imageStats[image.id]} />
+            <img src={image.urls.small} alt={image.user.username} />
+          </div>
+        ))}
+      </section>
+    );
+  }
+
+  renderButton() {
+    return (
+      <Button
+        onClick={() => this.props.loadImages()}
+        loading={this.props.isLoading}
+      >
+        Load
+      </Button>
+    );
+  }
+
+  renderError() {
+    if (this.props.error) {
+      return <div className="error">{JSON.stringify(this.props.error)}</div>;
+    }
   }
 
   render() {
-    const { images } = this.state;
     return (
       <div className="content">
-        <section className="grid">
-          {images.map(image => (
-            <div
-              key={image.id}
-              className={`item item-${Math.ceil(image.height / image.width)}`}
-            >
-              <img src={image.urls.small} alt={image.user.username} />
-            </div>
-          ))}
-        </section>
+        {this.renderGrid()}
+        {this.renderError()}
+        {this.renderButton()}
       </div>
     );
   }
 }
 
-export default ImageGrid;
+const mapStateToProps = ({ isLoading, images, imageStats, error }) => ({
+  isLoading,
+  images,
+  imageStats,
+  error,
+});
+
+export default connect(
+  mapStateToProps,
+  { loadImages }
+)(ImageGrid);

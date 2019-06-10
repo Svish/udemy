@@ -1,15 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Provider } from 'react-redux';
 
 import Header from './components/Header';
 import ImageGrid from './components/ImageGrid';
 
-class App extends Component {
+import createStore from './store';
+const store = createStore();
+
+class App extends React.Component {
   render() {
     return (
-      <div>
+      <Provider store={store}>
         <Header />
         <ImageGrid />
-      </div>
+      </Provider>
     );
   }
 }
