@@ -14,6 +14,7 @@ Code and stuff from going through [Udemy](https://www.udemy.com) courses and oth
 ## Other tutorials
 
 - [Cypress Tutorial Videos](cypress-tutorial)
+- [Learn Redux Saga](learn-redux-saga)
 
 ## Notes to self
 
