@@ -2,19 +2,22 @@
 
 Code and stuff from going through [Udemy](https://www.udemy.com) courses and other tutorials.
 
-## Udemy Courses
+## React / Redux / Saga
 
 - [Modern React with Redux](modern-react-with-redux)
 - [Node with React](node-with-react)
-- [React Testing with Jest and Enzyme](react-testing-with-jest-and-enzyme)
 - [Advanced React and Redux](advanced-react-with-redux)
+
 - [Redux Saga (with React and Redux)](redux-saga-fast-track)
-- [Automated Software Testing with Cypress](automated-software-testing-with-cypress)
-
-## Other tutorials
-
-- [Cypress Tutorial Videos](cypress-tutorial)
 - [Learn Redux Saga](learn-redux-saga)
+
+- [Server Side Rendering with React and Redux](server-side-rendering-with-react-and-redux)
+
+## Testing
+
+- [React Testing with Jest and Enzyme](react-testing-with-jest-and-enzyme)
+- [Automated Software Testing with Cypress](automated-software-testing-with-cypress)
+- [Cypress Tutorial Videos](cypress-tutorial)
 
 ## Notes to self
 
