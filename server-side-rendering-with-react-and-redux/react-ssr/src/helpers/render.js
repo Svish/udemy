@@ -1,10 +1,19 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 
-import Home from '../client/components/Home';
+import { StaticRouter } from 'react-router-dom';
 
-export default () => {
-  const content = renderToString(<Home />);
+import Routes from '../client/Routes';
+
+// NOTE: https://hackernoon.com/whats-new-with-server-side-rendering-in-react-16-9b0d78585d67#ee91
+
+export default req => {
+  const content = renderToString(
+    <StaticRouter location={req.path} context={{}}>
+      <Routes />
+    </StaticRouter>
+  );
+
   return `<!DOCTYPE html>
 <html>
   <head>

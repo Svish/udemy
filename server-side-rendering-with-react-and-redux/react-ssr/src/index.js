@@ -6,8 +6,8 @@ const app = express();
 
 app.use(express.static('build/public'));
 
-app.get('/', (_, res) => {
-  res.send(render());
+app.get('*', (req, res) => {
+  res.send(render(req));
 });
 
 app.listen(3000, () => {
