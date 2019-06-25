@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Home = () => {
+const HomePage = () => {
   return (
-    <div>
-      <div>Home</div>
-      <button onClick={() => console.log('Hello!')}>Hello?</button>
+    <div className="center-align">
+      <h2>Welcome</h2>
+      <p>Check out this awesome server-side rendering stuff.</p>
     </div>
   );
 };
 
-export default { component: Home };
+export default { component: HomePage };

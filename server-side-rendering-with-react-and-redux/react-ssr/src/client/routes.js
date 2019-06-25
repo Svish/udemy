@@ -1,14 +1,30 @@
+import App from './App';
+import NotFound from './pages/NotFound';
+
 import Home from './pages/Home';
-import UserList from './pages/UserList';
+import Users from './pages/Users';
+import Admins from './pages/Admins';
 
 export default [
   {
-    ...Home,
-    path: '/',
-    exact: true,
-  },
-  {
-    ...UserList,
-    path: '/users',
+    ...App,
+    routes: [
+      {
+        ...Home,
+        path: '/',
+        exact: true,
+      },
+      {
+        ...Users,
+        path: '/users',
+      },
+      {
+        ...Admins,
+        path: '/admins',
+      },
+      {
+        ...NotFound,
+      },
+    ],
   },
 ];
