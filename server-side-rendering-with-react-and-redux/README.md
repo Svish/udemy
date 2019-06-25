@@ -2,6 +2,8 @@
 
 Code from going through the [Server Side Rendering with React and Redux](https://www.udemy.com/server-side-rendering-with-react-and-redux/) course at [Udemy](https://www.udemy.com).
 
+## [react-ssr](react-ssr)
+
 - **Section 1:** Getting Started
 - **Section 2:** Let's Get Coding!
 - **Section 3:** Server Configuration
