@@ -1,9 +1,12 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import { StaticRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
 
-import Routes from '../client/Routes';
+import { Provider } from 'react-redux';
+import serialize from 'serialize-javascript';
+
+import { StaticRouter } from 'react-router-dom';
+import { renderRoutes } from 'react-router-config';
+import routes from '../client/routes';
 
 // NOTE: https://hackernoon.com/whats-new-with-server-side-rendering-in-react-16-9b0d78585d67#ee91
 
@@ -11,10 +14,12 @@ export default (req, store) => {
   const content = renderToString(
     <Provider store={store}>
       <StaticRouter location={req.path} context={{}}>
-        <Routes />
+        {renderRoutes(routes)}
       </StaticRouter>
     </Provider>
   );
+
+  const state = serialize(store.getState());
 
   return `<!DOCTYPE html>
 <html>
@@ -23,6 +28,9 @@ export default (req, store) => {
   </head>
   <body>
     <div id="root">${content}</div>
+    <script>
+      window.INITIAL_STATE = ${state};
+    </script>
     <script src="bundle.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "upgrade": "npx npm-check --update",
-    "dev": "run-p -sn dev:server \"dev:build:* -- --watch\"",
+    "dev": "run-p -s dev:server \"dev:build:* -- --watch\"",
     "dev:server": "nodemon build/bundle.js --watch build",
     "dev:build:server": "webpack --config webpack.server.js --mode development",
     "dev:build:client": "webpack --config webpack.client.js --mode development"
@@ -33,6 +33,7 @@
     "redux-thunk": "^2.3.0",
     "regenerator-runtime": "^0.13.2",
     "serialize-javascript": "^1.7.0",
+    "serve-favicon": "^2.5.0",
     "webpack": "^4.35.0",
     "webpack-dev-server": "^3.7.2",
     "webpack-merge": "^4.2.1",
