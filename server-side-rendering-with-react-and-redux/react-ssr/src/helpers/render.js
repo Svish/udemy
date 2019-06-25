@@ -8,7 +8,7 @@ import { StaticRouter } from 'react-router-dom';
 import { renderRoutes } from 'react-router-config';
 import routes from '../client/routes';
 
-// NOTE: https://hackernoon.com/whats-new-with-server-side-rendering-in-react-16-9b0d78585d67#ee91
+import { Helmet } from 'react-helmet';
 
 export default (req, store, context) => {
   const content = renderToString(
@@ -19,6 +19,8 @@ export default (req, store, context) => {
     </Provider>
   );
 
+  const helmet = Helmet.renderStatic();
+
   const state = serialize(store.getState());
 
   return `<!DOCTYPE html>
@@ -26,6 +28,8 @@ export default (req, store, context) => {
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha256-OweaP/Ic6rsV+lysfyS4h+LM6sRwuO3euTYfr6M124g=" crossorigin="anonymous" />
+    ${helmet.title.toString()}
+    ${helmet.meta.toString()}
   </head>
   <body>
     <div id="root">${content}</div>
