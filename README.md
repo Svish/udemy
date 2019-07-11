@@ -18,6 +18,10 @@ Code and stuff from going through [Udemy](https://www.udemy.com) courses and oth
 
 - [Server Side Rendering with React and Redux](server-side-rendering-with-react-and-redux)
 
+## Webpack
+
+- [Webpack 2: The Complete Developer's Guide](webpack-2)
+
 ## Testing
 
 - [React Testing with Jest and Enzyme](react-testing-with-jest-and-enzyme)
