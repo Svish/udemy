@@ -15,10 +15,10 @@ const config = {
         test: /\.js$/,
       },
       {
-        loader: ExtractTextPlugin.extract({
-          loader: 'css-loader',
-        }),
         test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+          use: 'css-loader',
+        }),
       },
       {
         test: /.(jpe?g|png|gif|svg)$/,
