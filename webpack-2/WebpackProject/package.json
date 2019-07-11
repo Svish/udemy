@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && webpack"
+    "build": "npm run clean && webpack -p",
+    "start": "webpack-dev-server"
   },
   "repository": "https://github.com/StephenGrider/WebpackProject",
   "author": "",
@@ -31,6 +32,8 @@
     "html-webpack-plugin": "^2.30.1",
     "rimraf": "^2.6.3",
     "style-loader": "^0.13.1",
-    "webpack": "2.2.0-rc.0"
+    "webpack": "^2.7.0",
+    "webpack-dev-middleware": "^1.12.2",
+    "webpack-dev-server": "^2.11.5"
   }
 }

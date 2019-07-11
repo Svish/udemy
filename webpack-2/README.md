@@ -12,3 +12,8 @@ Code from going through the [Webpack 2: The Complete Developer's Guide](https://
 ## [WebpackProject](WebpackProject)
 
 - **Section 5:** Applying Webpack to a Real Project
+- **Section 6:** Webpack Dev Server
+- **Section 7:** React-Specific Topics
+- **Section 8:** Webpack-Based Deployment for Static Sites
+- **Section 9:** Webpack-Based Deployment for Dynamic
+  Sites
