@@ -7,3 +7,8 @@ Code from going through the [Webpack 2: The Complete Developer's Guide](https://
 - **Section 1:** How to Use This Course
 - **Section 2:** What Does Webpack Do?
 - **Section 3:** Handling Project Assets
+- **Section 4:** Building for Performance with Webpack
+
+## [WebpackProject](WebpackProject)
+
+- **Section 5:** Applying Webpack to a Real Project
