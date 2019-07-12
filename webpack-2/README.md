@@ -15,5 +15,4 @@ Code from going through the [Webpack 2: The Complete Developer's Guide](https://
 - **Section 6:** Webpack Dev Server
 - **Section 7:** React-Specific Topics
 - **Section 8:** Webpack-Based Deployment for Static Sites
-- **Section 9:** Webpack-Based Deployment for Dynamic
-  Sites
+- **Section 9:** Webpack-Based Deployment for Dynamic Sites
