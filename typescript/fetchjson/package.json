@@ -1,0 +1,13 @@
+{
+  "name": "fetchjson",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  }
+}

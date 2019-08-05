@@ -1,0 +1,9 @@
+{
+  "name": "features",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  }
+}
