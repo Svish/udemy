@@ -16,10 +16,18 @@ Code from going through the [Typescript: The Complete Developer's Guide](https:/
 - **Section 7:** The All-Important Interface
 - **Section 8:** Building Functionality with Classes
 
----
+## [maps](maps)
 
 - **Section 9:** Design Patterns with Typescript
+
+_**Note:** Requires valid [API Key](https://console.developers.google.com/apis/dashboard) for the [Maps Javascript API](https://console.developers.google.com/apis/library/maps-backend.googleapis.com) in `index.html`._
+
+## [sort](sort)
+
 - **Section 10:** More on Design Patterns
+
+---
+
 - **Section 11:** Reusable Code
 - **Section 12:** Advanced Generics
 - **Section 13:** Let's Build a Web Framework
