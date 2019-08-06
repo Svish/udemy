@@ -13,11 +13,11 @@ Code from going through the [Typescript: The Complete Developer's Guide](https:/
 - **Section 4:** Annotations With Functions and Objects
 - **Section 5:** Mastering Typed Arrays
 - **Section 6:** Tuples in Typescript
+- **Section 7:** The All-Important Interface
+- **Section 8:** Building Functionality with Classes
 
 ---
 
-- **Section 7:** The All-Important Interface
-- **Section 8:** Building Functionality with Classes
 - **Section 9:** Design Patterns with Typescript
 - **Section 10:** More on Design Patterns
 - **Section 11:** Reusable Code
