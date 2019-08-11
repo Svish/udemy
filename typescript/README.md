@@ -15,6 +15,7 @@ Code from going through the [Typescript: The Complete Developer's Guide](https:/
 - **Section 6:** Tuples in Typescript
 - **Section 7:** The All-Important Interface
 - **Section 8:** Building Functionality with Classes
+- **Section 12:** Advanced Generics
 
 ## [maps](maps)
 
@@ -32,7 +33,6 @@ _**Note:** Requires valid [API Key](https://console.developers.google.com/apis/d
 
 ---
 
-- **Section 12:** Advanced Generics
 - **Section 13:** Let's Build a Web Framework
 - **Section 14:** Express + Typescript Integration
 - **Section 15:** Decorators
