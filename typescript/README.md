@@ -26,9 +26,12 @@ _**Note:** Requires valid [API Key](https://console.developers.google.com/apis/d
 
 - **Section 10:** More on Design Patterns
 
----
+## [stats](stats)
 
 - **Section 11:** Reusable Code
+
+---
+
 - **Section 12:** Advanced Generics
 - **Section 13:** Let's Build a Web Framework
 - **Section 14:** Express + Typescript Integration
