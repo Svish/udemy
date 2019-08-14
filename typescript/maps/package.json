@@ -6,12 +6,10 @@
     "start": "parcel -p 3000 index.html"
   },
   "dependencies": {
-    "faker": "^4.1.0",
-    "parcel-bundler": "^1.12.3"
-  },
-  "devDependencies": {
     "@types/faker": "^4.1.5",
     "@types/googlemaps": "^3.37.1",
+    "faker": "^4.1.0",
+    "parcel-bundler": "^1.12.3",
     "typescript": "^3.5.3"
   }
 }
