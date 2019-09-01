@@ -16,6 +16,7 @@ Code from going through the [Typescript: The Complete Developer's Guide](https:/
 - **Section 7:** The All-Important Interface
 - **Section 8:** Building Functionality with Classes
 - **Section 12:** Advanced Generics
+- **Section 15:** Decorators
 
 ## [maps](maps)
 
@@ -41,6 +42,5 @@ _**Note:** Requires valid [API Key](https://console.developers.google.com/apis/d
 
 ---
 
-- **Section 15:** Decorators
 - **Section 16:** Advanced Express and TS Integration
 - **Section 17:** React and Redux with Typescript
