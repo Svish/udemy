@@ -1,0 +1,19 @@
+{
+  "name": "server-1",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "ts-node-dev --no-notify --respawn -- src/index.ts"
+  },
+  "dependencies": {
+    "@types/body-parser": "^1.17.1",
+    "@types/cookie-session": "^2.0.37",
+    "@types/express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "cookie-session": "^1.3.3",
+    "express": "^4.17.1",
+    "reflect-metadata": "^0.1.13",
+    "ts-node-dev": "^1.0.0-pre.42",
+    "typescript": "^3.6.2"
+  }
+}
