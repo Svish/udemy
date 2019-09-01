@@ -44,6 +44,6 @@ _**Note:** Requires valid [API Key](https://console.developers.google.com/apis/d
 
 - **Section 16:** Advanced Express and TS Integration
 
----
+## [react-redux](react-redux)
 
 - **Section 17:** React and Redux with Typescript
