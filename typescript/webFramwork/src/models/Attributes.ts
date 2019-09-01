@@ -1,5 +1,5 @@
 export default class Attributes<T> {
-  private data: T;
+  private readonly data: T;
 
   constructor(data: T) {
     this.data = { ...data };

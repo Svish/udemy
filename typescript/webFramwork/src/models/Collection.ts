@@ -11,6 +11,10 @@ export default class Collection<T, D> {
     private readonly deserialize: (data: D) => T
   ) {}
 
+  get all() {
+    return this.models;
+  }
+
   get on() {
     return this.events.on;
   }

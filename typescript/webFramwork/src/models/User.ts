@@ -29,4 +29,9 @@ export default class User extends Model<UserData> {
   isAdmin(): boolean {
     return this.get('id') === 1;
   }
+
+  setRandomAge(): void {
+    const age = Math.round(Math.random() * 60) + 10;
+    this.set({ age });
+  }
 }
