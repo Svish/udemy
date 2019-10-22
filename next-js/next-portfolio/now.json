@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "udemy-next-portfolio",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ]
+}
