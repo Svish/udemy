@@ -1,0 +1,20 @@
+{
+  "name": "hacker-next",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "build": "next build"
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.1.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "sw-precache-webpack-plugin": "^0.11.5"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "now": "^16.4.0"
+  }
+}
