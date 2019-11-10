@@ -1,14 +1,5 @@
-const navBarStyle = {
-  backgroundColor: 'red',
-  color: 'white',
-  width: '100%',
-  height: '60px',
-};
+import './NavBar.scss';
 
-const NavBar = () => (
-  <div className="NavBar" style={navBarStyle}>
-    NAVBAR
-  </div>
-);
+const NavBar = () => <div className="NavBar">NAVBAR</div>;
 
 export default NavBar;

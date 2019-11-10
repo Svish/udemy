@@ -1,4 +1,5 @@
 import NextApp from 'next/app';
+
 import Layout from '../components/Layout';
 
 export default class App extends NextApp {

@@ -1,32 +1,27 @@
 import Head from 'next/head';
 
+import './index.scss';
+import './Layout.scss';
+
 import Header from './Header';
 import NavBar from './NavBar';
 
-const layoutStyle = {
-  display: 'flex',
-  flexDirection: 'column',
-  height: '100%',
-  width: '100%',
-};
+const NAME = 'WHATABYTE';
 
-const contentStyle = {
-  flex: 1,
-  display: 'flex',
-  flexDirection: 'column',
-};
+const Layout = props => {
+  return (
+    <div className="Layout">
+      <Head>
+        <title>{NAME}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+      </Head>
 
-const Layout = props => (
-  <div className="Layout" style={layoutStyle}>
-    <Head>
-      <title>WHATABYTE</title>
-    </Head>
-    <Header />
-    <div className="Content" style={contentStyle}>
-      {props.children}
+      <Header title={`> ${NAME}`} />
+      <div className="Content">{props.children}</div>
+      <NavBar />
     </div>
-    <NavBar />
-  </div>
-);
+  );
+};
 
 export default Layout;
