@@ -13,6 +13,7 @@ Code and stuff from going through [Udemy](https://www.udemy.com) courses and oth
 
 - [Universal React with Next.js](next-js)
 - [Next.js Practical Introduction](next-js-practical-introduction)
+- [Blog with Next.js, React and Sanity CMS](blog-with-next-js-and-sanity)
 
 ### Saga
 
