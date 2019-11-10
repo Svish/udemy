@@ -1,7 +1,11 @@
+import Link from 'next/link';
+
 const Index = () => (
-  <div>
-    <p>Thank u, next</p>
-  </div>
+  <>
+    <Link href="/explore">
+      <a> Welcome to WHATABYTE! Start Exploring Now</a>
+    </Link>
+  </>
 );
 
 export default Index;
