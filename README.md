@@ -8,7 +8,11 @@ Code and stuff from going through [Udemy](https://www.udemy.com) courses and oth
 - [Node with React](node-with-react)
 - [Advanced React and Redux](advanced-react-with-redux)
 - [Typescript with modern React](typescript-with-react-hooks-and-context)
+
+## Next.js
+
 - [Universal React with Next.js](next-js)
+- [Next.js Practical Introduction](next-js-practical-introduction)
 
 ### Saga
 
